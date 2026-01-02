@@ -1,0 +1,1 @@
+// Simple visual background placeholder
