@@ -20,62 +20,13 @@
 <section class="card">
   <h2>Download AURA AI 2.0</h2>
   <p>Must Buy ₹1999 Membership. The video with the password is uploaded!</p>
+
+  <!-- Payment / Download Link -->
   <div style="margin-top:15px;">
-    <a href="https://www.youtube.com/channel/UCk_IFX17aVZGuFgE7Ir4i7A/join" class="btn" target="_blank" id="downloadBtn">Buy Membership ₹1999</a>
-    <div id="qrCode" style="display:none; margin-top:10px;"></div>
+    <a href="https://www.youtube.com/channel/UCk_IFX17aVZGuFgE7Ir4i7A/join" class="btn" target="_blank">Buy Membership ₹1999</a>
   </div>
 </section>
-<script>
-  const downloadBtn = document.getElementById('downloadBtn');
-  const qrCodeDiv = document.getElementById('qrCode');
-
-  downloadBtn.addEventListener('click', function(e) {
-    e.preventDefault();
-    
-    // Show QR code div
-    qrCodeDiv.style.display = 'block';
-    
-    // Create QR code for the payment link
-    const qr = new QRious({
-      element: document.createElement('canvas'),
-      value: 'https://www.youtube.com/channel/UCk_IFX17aVZGuFgE7Ir4i7A/join',
-      size: 150
-    });
-
-    // Add QR code to div
-    qrCodeDiv.innerHTML = ''; // clear previous
-    qrCodeDiv.appendChild(qr.element);
-  });
-</script>
-
-
-<!-- QR Code Script -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
-<script>
-  const downloadBtn = document.getElementById('downloadBtn');
-  const qrCodeDiv = document.getElementById('qrCode');
-
-  downloadBtn.addEventListener('click', function(e) {
-    e.preventDefault();
-    
-    // Show QR code div
-    qrCodeDiv.style.display = 'block';
-    
-    // Create QR code
-    const qr = new QRious({
-      element: document.createElement('canvas'),
-      value: 'https://yourdownloadlink.com/AURA_AI_2.0', // replace with your real download link
-      size: 150
-    });
-
-    // Add QR code to div
-    qrCodeDiv.innerHTML = ''; // clear previous
-    qrCodeDiv.appendChild(qr.element);
-  });
-</script>
-
-
-
+  
 <section class="card">
 <h2>Take Part In Content (FREE)</h2>
 <p>You all are selected for free. No user will be paid.</p>
@@ -96,6 +47,7 @@
 </body>
 
 </html>
+
 
 
 
