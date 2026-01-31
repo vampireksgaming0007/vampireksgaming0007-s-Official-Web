@@ -18,9 +18,40 @@
 
 
 <section class="card">
-<h2>About Channel</h2>
-<p>This is the official website of VAMPIRE KS GAMING 0007. All content participation, agreements, giveaways and paid promotions are handled here.</p>
+  <!-- Logo -->
+  <img src="logo.png" alt="AURA AI Logo" class="logo" style="width:100px;height:auto;margin-bottom:10px;">
+  <!-- Download Link with QR Code -->
+  <div style="margin-top:15px;">
+    <a href="#" class="btn" id="downloadBtn">Download AURA AI 2.0 (₹999)</a>
+    <div id="qrCode" style="display:none; margin-top:10px;"></div>
+  </div>
 </section>
+
+<!-- QR Code Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+<script>
+  const downloadBtn = document.getElementById('downloadBtn');
+  const qrCodeDiv = document.getElementById('qrCode');
+
+  downloadBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    // Show QR code div
+    qrCodeDiv.style.display = 'block';
+    
+    // Create QR code
+    const qr = new QRious({
+      element: document.createElement('canvas'),
+      value: 'https://yourdownloadlink.com/AURA_AI_2.0', // replace with your real download link
+      size: 150
+    });
+
+    // Add QR code to div
+    qrCodeDiv.innerHTML = ''; // clear previous
+    qrCodeDiv.appendChild(qr.element);
+  });
+</script>
+
 
 
 <section class="card">
@@ -41,4 +72,5 @@
 
 <script src="js/particles.js"></script>
 </body>
+
 </html>
